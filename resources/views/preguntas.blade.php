@@ -1,6 +1,6 @@
 @extends('layouts/master')
 @section('content')
-          <?php foreach ($preguntas as $key => $value):?>
+         <!-- <?php foreach ($preguntas as $key => $value):?>
             <tr>
 
               <td><?=$value["question"];?></td>
@@ -11,6 +11,7 @@
       </tbody>
   </div>
 </div>-->
+<div class="container">
 <h3>Preguntas frecuentes</h3>
     <ul>
         @forelse ($preguntas as $pregunta)
@@ -24,4 +25,5 @@
         <p>No hay preguntas para mostrar</p>    
         @endforelse
     </ul>
+  </div>
 @endsection

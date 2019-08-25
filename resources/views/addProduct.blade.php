@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('content')
+<div class="container">
     <form class="form" action="/addProduct" method="POST">
         @csrf
         <div class="form-group">
@@ -26,4 +27,5 @@
             <input type="submit" class="btn btn-primary" name="" value="Agregar producto">
         </div>
     </form>
+</div>
 @endsection
