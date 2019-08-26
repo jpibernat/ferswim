@@ -66,3 +66,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//ruta para la vista de preguntas como usuario final
+Route::get('/preguntas', 'preguntasController@list')->name('preguntas');
+
+Auth::routes();

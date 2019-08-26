@@ -26,28 +26,27 @@
       font-family: 'Montserrat', sans-serif;
   }
 
-  .navlinks img{
+  .nav-link img{
       height: 3.5rem;
   }
 
-  .navlinks{
+  .nav-link{
       display: flex;
-      width: 90%;
+      width: 100%;
       justify-content: space-around;
       align-items: center;
       list-style: none;
-      letter-spacing: 0.5rem;
   }
 
-  .navlinks a{
+  .nav-link a{
       color: #000000;
       text-decoration: none;
       font-size: 0.8rem;
       transition: all 0.5s ease-in;
   }
 
-  .navlinks a:hover,
-  .navlinks a:focus {
+  .nav-link a:hover,
+  .nav-link a:focus {
       color: aliceblue;
       font-size: 0.9rem;
       text-decoration: underline;
@@ -387,7 +386,7 @@
     }
 
     .prodhome{
-      margin-top: 10vh;
+      margin-top: 15vh;
     }
 
     article img{
