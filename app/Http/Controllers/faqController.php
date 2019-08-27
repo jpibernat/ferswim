@@ -31,4 +31,14 @@ class faqController extends Controller
         
         return redirect('/faq');
     }
+
+    public function Destroy(id $preguntas){
+        
+        $preguntas = Pregunta::find($id);
+        
+        $preguntas->delete();
+
+        return redirect('/faq');
+
+    }
 }

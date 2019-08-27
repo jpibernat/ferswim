@@ -37,6 +37,8 @@ Route::get ('/addQuestion', function(){
 //ruta GET que redirige al formulario para agregar una pregunta al listado de preguntas frecuentes.
 Route::post ('/addQuestion', 'faqController@add');
 //ruta POST de la vista para mostrar el formulario para agregar una pregunta a la vista de pŕeguntas y respuestas
+Route::post ('/faq', 'faqController@delete');
+//ruta POST de la vista para eliminar una pregunta a la vista de pŕeguntas y respuestas
 Route::get('/products', 'ProductsController@list');
 // ruta de edicion de productos. Lo que se modifique aca deberia directamente influir sobre la vista de la lista de productos.
 Route::get('/users', 'UsersController@list');

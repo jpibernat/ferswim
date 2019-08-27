@@ -10,4 +10,9 @@ class Cart extends Model
     //public $primaryKey = "id";
     public $timestamps = false;
     public $guarded = [];
+    public function getCart(){
+        return $this->product-id . " " . $this->answer;
+    }
+
 }
+

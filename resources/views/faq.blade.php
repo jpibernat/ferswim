@@ -31,7 +31,13 @@
                         <i class="fas fa-edit"></i>
                       </a>
                   </td>
-                  <td><a href="eliminarPregunta.php?id=<?=$value['id'];?>">
+                  <td>
+                    <!--<form action="/faq" method="POST">
+                    {{ csrf_field() }}
+                    <input type="hidden" name="id" value="">
+                    <input type="submit" name="" value="borrar"> 
+                    </form>-->
+                    <a href="faq?id=<?=$value['id'];?>">
                         <i class="fas fa-trash-alt"></i>
                       </a>
                   </td>
