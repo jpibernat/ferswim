@@ -23,6 +23,12 @@
             <label for="description">Descripcion</label>
             <input type="text" class="form-control" name="description" value="">
         </div>
+        <div class="custom-file">
+                <input type="file" name="avatar" class="custom-file-input" value="" />
+                <label class="custom-file-label" for="validatedCustomFile" style="text-align: left;">Seleccione un avatar</label>
+              <div class="invalid-feedback">Example invalid custom file feedback</div>
+               <span><?= (isset($errores['avatar'])) ? $errores["avatar"] : "" ?></span>
+        </div>
         <div class="form-group">
             <input type="submit" class="btn btn-primary" name="" value="Agregar producto">
         </div>
